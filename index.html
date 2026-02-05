@@ -5,33 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siddharth Kumar - Professional Resume</title>
     <style>
-        body { font-family: 'Arial', sans-serif; background: #555; margin: 0; padding: 40px; color: #333; line-height: 1.4; }
-        .resume-container { max-width: 900px; margin: 0 auto; background: white; display: flex; box-shadow: 0 0 20px rgba(0,0,0,0.5); min-height: 1100px; }
+        body { font-family: 'Helvetica', 'Arial', sans-serif; background: #e0e0e0; margin: 0; padding: 20px; color: #333; line-height: 1.5; }
+        .resume-container { max-width: 900px; margin: 0 auto; background: white; display: flex; box-shadow: 0 0 20px rgba(0,0,0,0.2); }
         
-        /* Left Sidebar (Dark Blue/Grey) */
-        .sidebar { width: 35%; background: #2c3e50; color: white; padding: 40px 30px; }
-        .profile-img { width: 160px; height: 160px; border-radius: 50%; border: 4px solid white; margin: 0 auto 30px; 
-                       background-image: url('my-photo.jpg'); background-size: cover; background-position: center; }
-        .sidebar h2 { border-bottom: 2px solid #4a6278; padding-bottom: 10px; font-size: 1.1rem; text-transform: uppercase; margin-top: 40px; letter-spacing: 1px; }
-        .contact-info p { font-size: 0.85rem; margin: 12px 0; display: flex; align-items: center; }
-        .skill-list { list-style: none; padding: 0; margin: 0; }
-        .skill-list li { font-size: 0.85rem; margin-bottom: 8px; padding-left: 10px; border-left: 2px solid #3498db; }
+        /* Left Sidebar - Black Style */
+        .sidebar { width: 35%; background: #262626; color: white; padding: 40px 25px; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 4px solid white; margin: 0 auto 30px; 
+                       background-image: url('my-photo.jpg'); background-size: cover; background-position: center; background-color: #444; }
+        .sidebar h2 { border-bottom: 1px solid #555; padding-bottom: 5px; font-size: 1.1rem; text-transform: uppercase; margin-top: 35px; letter-spacing: 1px; }
+        .contact-info p { font-size: 0.8rem; margin: 15px 0; line-height: 1.2; word-wrap: break-word; }
+        .edu-item-side { margin-bottom: 20px; font-size: 0.85rem; }
+        .edu-item-side strong { display: block; margin-bottom: 3px; font-size: 0.9rem; }
+        .edu-item-side p { margin: 2px 0; color: #bbb; font-size: 0.8rem; }
 
         /* Right Main Content */
         .main-content { width: 65%; padding: 50px; background: white; }
-        .name-header { border-bottom: 4px solid #2c3e50; padding-bottom: 10px; margin-bottom: 25px; }
-        .name-header h1 { margin: 0; font-size: 2.8rem; text-transform: uppercase; color: #2c3e50; font-weight: 800; }
-        .name-header p { margin: 5px 0 0; font-size: 1.1rem; font-weight: bold; color: #555; }
+        .name-header h1 { margin: 0; font-size: 3rem; text-transform: uppercase; color: #333; font-weight: 900; letter-spacing: 2px; }
+        .name-header { margin-bottom: 40px; }
         
-        .section-title { color: #2c3e50; text-transform: uppercase; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-top: 30px; font-size: 1.1rem; letter-spacing: 1px; }
-        .edu-item, .train-item { margin-top: 15px; }
-        .edu-item h4, .train-item h4 { margin: 0; font-size: 1rem; color: #333; }
-        .institute { font-weight: bold; color: #444; font-size: 0.9rem; margin: 2px 0; }
-        .date-range { font-style: italic; font-size: 0.85rem; color: #777; margin-bottom: 8px; }
+        .section-title { color: #000; text-transform: uppercase; border-bottom: 2px solid #000; padding-bottom: 5px; margin-top: 30px; font-size: 1rem; font-weight: bold; }
+        .content-box { font-size: 0.85rem; color: #444; margin-top: 15px; }
         
-        ul { padding-left: 18px; margin-top: 8px; }
-        ul li { font-size: 0.88rem; margin-bottom: 5px; }
-        a { color: #3498db; text-decoration: none; }
+        .sub-heading { font-weight: bold; margin-top: 15px; font-size: 0.9rem; color: #222; display: flex; justify-content: space-between; }
+        .institute-name { font-weight: bold; color: #000; margin-bottom: 5px; font-size: 0.85rem; }
+        
+        ul { padding-left: 15px; margin-top: 10px; list-style-type: disc; }
+        ul li { margin-bottom: 5px; font-size: 0.8rem; color: #555; }
+        a { color: white; text-decoration: none; }
+        .skill-group { margin-bottom: 15px; }
+        .skill-group strong { font-size: 0.85rem; color: #333; }
     </style>
 </head>
 <body>
@@ -40,7 +42,7 @@
     <div class="sidebar">
         <div class="profile-img"></div>
         
-        <h2>CONTACT [cite: 1]</h2>
+        <h2>CONTACT</h2>
         <div class="contact-info">
             <p>📞 +91 9958774322 [cite: 5]</p>
             <p>📧 Siddharthkr.sk2003@gmail.com [cite: 6]</p>
@@ -48,93 +50,88 @@
             <p>📍 INDIRAPURAM, GHAZIABAD [cite: 8]</p>
         </div>
 
-        <h2>TECHNICAL SKILLS [cite: 61]</h2>
-        <p style="font-size: 0.9rem; font-weight: bold; margin-bottom: 5px;">Operating Systems [cite: 62]</p>
-        <ul class="skill-list">
-            <li>Kali Linux [cite: 63]</li>
-            <li>Windows (installation & troubleshooting) [cite: 64]</li>
-        </ul>
-
-        <p style="font-size: 0.9rem; font-weight: bold; margin: 15px 0 5px;">Networking [cite: 65]</p>
-        <ul class="skill-list">
-            <li>TCP/IP [cite: 66]</li>
-            <li>IP Addressing & Classes [cite: 67]</li>
-            <li>OSI & TCP/IP Model [cite: 68]</li>
-        </ul>
-
-        <p style="font-size: 0.9rem; font-weight: bold; margin: 15px 0 5px;">Virtualization [cite: 69]</p>
-        <ul class="skill-list">
-            <li>VirtualBox / VMware [cite: 70]</li>
-        </ul>
-
-        <p style="font-size: 0.9rem; font-weight: bold; margin: 15px 0 5px;">Tools & Concepts [cite: 71]</p>
-        <ul class="skill-list">
-            <li>Linux terminal commands [cite: 72]</li>
-            <li>User & file permission management [cite: 73]</li>
-            <li>AWS & Azure cloud fundamentals [cite: 78]</li>
-        </ul>
-
-        <h2>SOFT SKILLS [cite: 87]</h2>
-        <ul class="skill-list">
-            <li>Quick learner [cite: 88]</li>
-            <li>Problem-solving mindset [cite: 89]</li>
-            <li>Team collaboration [cite: 89]</li>
-            <li>Adaptability [cite: 89]</li>
-        </ul>
+        <h2>EDUCATION</h2>
+        <div class="edu-item-side">
+            <strong>Cloud Computing with AI [cite: 14]</strong>
+            <p>Jetking infotarin limited [cite: 14]</p>
+            <p>2025-2026 [cite: 14]</p>
+        </div>
+        <div class="edu-item-side">
+            <strong>B.com. (Hons) [cite: 15]</strong>
+            <p>Delhi University [cite: 15]</p>
+            <p>2023-2026 [cite: 15]</p>
+        </div>
+        <div class="edu-item-side">
+            <strong>Higher Secondary Education (Class XII) [cite: 16]</strong>
+            <p>CBSE Board | Commerce [cite: 17]</p>
+            <p>Ralli International School [cite: 18]</p>
+            <p>2023 [cite: 18]</p>
+        </div>
+        <div class="edu-item-side">
+            <strong>Secondary Education (Class X) [cite: 57]</strong>
+            <p>CBSE Board [cite: 58]</p>
+            <p>Ralli International School [cite: 59]</p>
+            <p>2020 [cite: 60]</p>
+        </div>
     </div>
 
     <div class="main-content">
         <div class="name-header">
-            <h1>SIDDHARTH KUMAR [cite: 2, 3]</h1>
-            <p>Cloud Computing & IT Enthusiast [cite: 11]</p>
+            <h1>SIDDHARTH [cite: 2]<br>KUMAR [cite: 3]</h1>
         </div>
 
         <h3 class="section-title">PROFILE SUMMARY [cite: 4]</h3>
-        <p style="font-size: 0.9rem;">
-            Motivated IT fresher with foundational knowledge of Linux system administration, cloud computing concepts, and basic networking[cite: 9]. 
-            Hands-on practice with Kali Linux, virtual machines, and core Linux commands[cite: 10]. 
-            Familiar with TCP/IP and OSI model, currently pursuing Cloud Computing training[cite: 11].
+        <p class="content-box">
+            Motivated IT fresher with foundational knowledge of Linux system administration, cloud computing concepts, and basic networking. [cite: 9] Hands-on practice with Kali Linux, virtual machines, and core Linux commands including user and file management. [cite: 10] Familiar with TCP/IP, IP addressing, and OSI model. Currently pursuing Cloud Computing with AI training. [cite: 11]
         </p>
 
-        <h3 class="section-title">TECHNICAL TRAINING [cite: 12]</h3>
-        <div class="train-item">
-            <h4>Cloud Computing with AI [cite: 20]</h4>
-            <div class="institute">Jetking Infotrain Ltd [cite: 21]</div>
-            <div class="date-range">2025-2026 [cite: 22]</div>
-            <ul>
-                <li>Installed and configured Kali Linux on virtual machines[cite: 24].</li>
-                <li>Practiced system administration: user creation, file management, and permissions[cite: 25].</li>
-                <li>Worked with virtualization tools to manage virtual machines[cite: 26].</li>
-                <li>Studied cloud concepts: IaaS, SaaS, and PaaS[cite: 26].</li>
-                <li>Learned networking fundamentals: TCP/IP, IP addressing, and OSI model[cite: 26].</li>
-                <li>AWS and Microsoft Azure cloud fundamentals[cite: 28].</li>
-            </ul>
+        <h3 class="section-title">TECHNICAL TRAINING & PRACTICAL EXPERIENCE </h3>
+        <div class="sub-heading">
+            <span>Cloud Computing with AI [cite: 20]</span>
+            <span>2025-2026 [cite: 22]</span>
+        </div>
+        <div class="institute-name">Jetking Infotrain Ltd [cite: 21]</div>
+        <ul>
+            <li>Gained hands-on experience with Linux operating systems in lab environment [cite: 23]</li>
+            <li>Installed and configured Kali Linux on virtual machines [cite: 24]</li>
+            <li>Practiced basic system administration tasks including user creation, file management, and permissions [cite: 25]</li>
+            <li>Worked with virtualization tools to create and manage virtual machines [cite: 26]</li>
+            <li>Studied cloud computing concepts such as IaaS, SaaS, and PaaS [cite: 26]</li>
+            <li>Learned networking fundamentals including TCP/IP, IP addressing, and OSI model [cite: 26]</li>
+            <li>Basic understanding of AWS and Microsoft Azure cloud platforms [cite: 28]</li>
+        </ul>
+
+        <h3 class="section-title">TECHNICAL SKILLS [cite: 61]</h3>
+        <div class="content-box">
+            <div class="skill-group">
+                <strong>Operating Systems:</strong> Kali Linux, Windows [cite: 62, 63, 64]
+            </div>
+            <div class="skill-group">
+                <strong>Networking:</strong> TCP/IP, IP Addressing, OSI & TCP/IP Model [cite: 65, 66, 67, 68]
+            </div>
+            <div class="skill-group">
+                <strong>Virtualization:</strong> VirtualBox / VMware [cite: 69, 70]
+            </div>
+            <div class="skill-group">
+                <strong>Tools:</strong> Linux terminal commands, User & file permission management [cite: 71, 72, 73]
+            </div>
+            <div class="skill-group">
+                <strong>Cloud:</strong> AWS & Azure cloud fundamentals [cite: 78, 79]
+            </div>
         </div>
 
-        <h3 class="section-title">EDUCATION [cite: 13]</h3>
-        <div class="edu-item">
-            <h4>Bachelor of Commerce (Honours) [cite: 30]</h4>
-            <div class="institute">Delhi University - School of Open Learning [cite: 35]</div>
-            <div class="date-range">2023-2026 [cite: 36]</div>
-        </div>
-
-        <div class="edu-item">
-            <h4>Higher Secondary Education (Class XII) [cite: 16]</h4>
-            <div class="institute">Ralli International School (CBSE Board) [cite: 18, 55]</div>
-            <div class="date-range">2023 [cite: 18]</div>
-        </div>
-
-        <div class="edu-item">
-            <h4>Secondary Education (Class X) [cite: 57]</h4>
-            <div class="institute">Ralli International School (CBSE Board) [cite: 59, 32]</div>
-            <div class="date-range">2020 [cite: 60]</div>
-        </div>
+        <h3 class="section-title">SOFT SKILLS [cite: 87]</h3>
+        <ul>
+            <li>Quick learner [cite: 88]</li>
+            <li>Problem-solving mindset [cite: 89]</li>
+            <li>Team collaboration & Adaptability [cite: 89]</li>
+        </ul>
 
         <h3 class="section-title">ADDITIONAL INFORMATION [cite: 90]</h3>
         <ul>
-            <li>Willing to learn new technologies[cite: 91].</li>
-            <li>Comfortable working in a team environment[cite: 91].</li>
-            <li>Interested in system administration and cloud roles[cite: 91].</li>
+            <li>Willing to learn new technologies [cite: 91]</li>
+            <li>Interested in system administration and cloud roles [cite: 91]</li>
+            <li>Available for entry-level/trainee positions [cite: 91]</li>
         </ul>
     </div>
 </div>
