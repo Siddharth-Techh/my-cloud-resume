@@ -3,108 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siddharth Kumar - Cloud Portfolio</title>
+    <title>Siddharth Kumar - Professional Resume</title>
     <style>
-        :root { --blue: #2c3e50; --grey: #f4f4f4; --text: #333; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #ddd; margin: 0; padding: 20px; color: var(--text); }
-        .resume { max-width: 900px; margin: 0 auto; background: white; display: flex; box-shadow: 0 0 20px rgba(0,0,0,0.2); min-height: 1000px; }
+        body { font-family: 'Arial', sans-serif; background: #555; margin: 0; padding: 40px; color: #333; line-height: 1.4; }
+        .resume-container { max-width: 900px; margin: 0 auto; background: white; display: flex; box-shadow: 0 0 20px rgba(0,0,0,0.5); min-height: 1100px; }
         
-        .sidebar { width: 35%; background: #2c3e50; color: white; padding: 30px; }
-        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 5px solid white; margin-bottom: 20px; background: #ccc; }
-        .sidebar h2 { border-bottom: 2px solid #555; padding-bottom: 10px; font-size: 1.2rem; text-transform: uppercase; margin-top: 30px; }
-        .contact-info p { font-size: 0.9rem; margin: 10px 0; }
-        .skill-list { list-style: none; padding: 0; font-size: 0.85rem; }
-        .skill-list li { margin-bottom: 8px; padding-left: 10px; border-left: 2px solid #3498db; }
+        /* Left Sidebar (Dark Blue/Grey) */
+        .sidebar { width: 35%; background: #2c3e50; color: white; padding: 40px 30px; }
+        .profile-img { width: 160px; height: 160px; border-radius: 50%; border: 4px solid white; margin: 0 auto 30px; 
+                       background-image: url('my-photo.jpg'); background-size: cover; background-position: center; }
+        .sidebar h2 { border-bottom: 2px solid #4a6278; padding-bottom: 10px; font-size: 1.1rem; text-transform: uppercase; margin-top: 40px; letter-spacing: 1px; }
+        .contact-info p { font-size: 0.85rem; margin: 12px 0; display: flex; align-items: center; }
+        .skill-list { list-style: none; padding: 0; margin: 0; }
+        .skill-list li { font-size: 0.85rem; margin-bottom: 8px; padding-left: 10px; border-left: 2px solid #3498db; }
 
-        .main { width: 65%; padding: 40px; }
-        .header-name { border-bottom: 4px solid #2c3e50; padding-bottom: 10px; margin-bottom: 20px; }
-        .header-name h1 { margin: 0; font-size: 2.5rem; text-transform: uppercase; color: #2c3e50; }
-        .section-title { color: #2c3e50; text-transform: uppercase; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 25px; }
-        .exp-item { margin-bottom: 20px; }
-        .exp-item h4 { margin: 10px 0 5px 0; color: #444; }
-        .date { font-style: italic; font-size: 0.85rem; color: #666; }
-        ul { padding-left: 20px; font-size: 0.9rem; line-height: 1.6; }
+        /* Right Main Content */
+        .main-content { width: 65%; padding: 50px; background: white; }
+        .name-header { border-bottom: 4px solid #2c3e50; padding-bottom: 10px; margin-bottom: 25px; }
+        .name-header h1 { margin: 0; font-size: 2.8rem; text-transform: uppercase; color: #2c3e50; font-weight: 800; }
+        .name-header p { margin: 5px 0 0; font-size: 1.1rem; font-weight: bold; color: #555; }
+        
+        .section-title { color: #2c3e50; text-transform: uppercase; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-top: 30px; font-size: 1.1rem; letter-spacing: 1px; }
+        .edu-item, .train-item { margin-top: 15px; }
+        .edu-item h4, .train-item h4 { margin: 0; font-size: 1rem; color: #333; }
+        .institute { font-weight: bold; color: #444; font-size: 0.9rem; margin: 2px 0; }
+        .date-range { font-style: italic; font-size: 0.85rem; color: #777; margin-bottom: 8px; }
+        
+        ul { padding-left: 18px; margin-top: 8px; }
+        ul li { font-size: 0.88rem; margin-bottom: 5px; }
+        a { color: #3498db; text-decoration: none; }
     </style>
 </head>
 <body>
 
-<div class="resume">
+<div class="resume-container">
     <div class="sidebar">
-        <div class="profile-img" style="background-image: url('siddharthkumar photo.jpg'); background-size: cover;"></div>
+        <div class="profile-img"></div>
         
-        <h2>Contact</h2>
+        <h2>CONTACT [cite: 1]</h2>
         <div class="contact-info">
-            <p>📞 +91 9958774322</p>
-            <p>📧 Siddharthkr.sk2003@gmail.com</p>
-            <p>📍 Indirapuram, Ghaziabad</p>
-          <p>🔗 <a href="https://www.linkedin.com/in/siddharthkumar-it" target="_blank" style="color: #3498db;">LinkedIn Profile</a></p>
-            <p>🔗 <a href="https://github.com/Siddharth-Techh" style="color: #3498db;">GitHub Profile</a></p>
+            <p>📞 +91 9958774322 [cite: 5]</p>
+            <p>📧 Siddharthkr.sk2003@gmail.com [cite: 6]</p>
+            <p>🔗 <a href="https://www.linkedin.com/in/siddharthkumar-it" target="_blank">siddharthkumar-it [cite: 7]</a></p>
+            <p>📍 INDIRAPURAM, GHAZIABAD [cite: 8]</p>
         </div>
 
-        <h2>Technical Skills</h2>
+        <h2>TECHNICAL SKILLS [cite: 61]</h2>
+        <p style="font-size: 0.9rem; font-weight: bold; margin-bottom: 5px;">Operating Systems [cite: 62]</p>
         <ul class="skill-list">
-            <li>Linux & Windows</li>
-            <li>TCP/IP & IP Addressing</li>
-            <li>Operating system </li>
-            <li> Oracle / VMware</li>
-            <li>Linux Terminal Commands</li>
-            <li>AWS & Azure Fundamentals</li>
+            <li>Kali Linux [cite: 63]</li>
+            <li>Windows (installation & troubleshooting) [cite: 64]</li>
         </ul>
 
-        <h2>Soft Skills</h2>
+        <p style="font-size: 0.9rem; font-weight: bold; margin: 15px 0 5px;">Networking [cite: 65]</p>
         <ul class="skill-list">
-            <li>Quick Learner</li>
-            <li>Problem-Solving</li>
-            <li>Team Collaboration</li>
-            <li>Adaptability</li>
+            <li>TCP/IP [cite: 66]</li>
+            <li>IP Addressing & Classes [cite: 67]</li>
+            <li>OSI & TCP/IP Model [cite: 68]</li>
+        </ul>
+
+        <p style="font-size: 0.9rem; font-weight: bold; margin: 15px 0 5px;">Virtualization [cite: 69]</p>
+        <ul class="skill-list">
+            <li>VirtualBox / VMware [cite: 70]</li>
+        </ul>
+
+        <p style="font-size: 0.9rem; font-weight: bold; margin: 15px 0 5px;">Tools & Concepts [cite: 71]</p>
+        <ul class="skill-list">
+            <li>Linux terminal commands [cite: 72]</li>
+            <li>User & file permission management [cite: 73]</li>
+            <li>AWS & Azure cloud fundamentals [cite: 78]</li>
+        </ul>
+
+        <h2>SOFT SKILLS [cite: 87]</h2>
+        <ul class="skill-list">
+            <li>Quick learner [cite: 88]</li>
+            <li>Problem-solving mindset [cite: 89]</li>
+            <li>Team collaboration [cite: 89]</li>
+            <li>Adaptability [cite: 89]</li>
         </ul>
     </div>
 
-    <div class="main">
-        <div class="header-name">
-            <h1>Siddharth Kumar</h1>
-            <p><strong>Cloud Computing & IT Enthusiast</strong></p>
+    <div class="main-content">
+        <div class="name-header">
+            <h1>SIDDHARTH KUMAR [cite: 2, 3]</h1>
+            <p>Cloud Computing & IT Enthusiast [cite: 11]</p>
         </div>
 
-        <h3 class="section-title">Profile Summary</h3>
-        <p style="font-size: 0.95rem;">Motivated IT fresher with foundational knowledge of Linux system administration, cloud computing, and networking. Hands-on experience with virtual machines and core Linux commands.</p>
+        <h3 class="section-title">PROFILE SUMMARY [cite: 4]</h3>
+        <p style="font-size: 0.9rem;">
+            Motivated IT fresher with foundational knowledge of Linux system administration, cloud computing concepts, and basic networking[cite: 9]. 
+            Hands-on practice with Kali Linux, virtual machines, and core Linux commands[cite: 10]. 
+            Familiar with TCP/IP and OSI model, currently pursuing Cloud Computing training[cite: 11].
+        </p>
 
-        <h3 class="section-title">Technical Training</h3>
-        <div class="exp-item">
-            <h4>Cloud Computing with AI</h4>
-            <span class="date">Jetking Infotrain Ltd | 2025-2026</span>
+        <h3 class="section-title">TECHNICAL TRAINING [cite: 12]</h3>
+        <div class="train-item">
+            <h4>Cloud Computing with AI [cite: 20]</h4>
+            <div class="institute">Jetking Infotrain Ltd [cite: 21]</div>
+            <div class="date-range">2025-2026 [cite: 22]</div>
             <ul>
-               <li>Installed and configured Kali Linux on virtual machines.</li>
-               <li>Practiced system administration tasks: user creation & file permissions.</li>
-                <li>Studied IaaS, SaaS, and PaaS cloud models.</li>
+                <li>Installed and configured Kali Linux on virtual machines[cite: 24].</li>
+                <li>Practiced system administration: user creation, file management, and permissions[cite: 25].</li>
+                <li>Worked with virtualization tools to manage virtual machines[cite: 26].</li>
+                <li>Studied cloud concepts: IaaS, SaaS, and PaaS[cite: 26].</li>
+                <li>Learned networking fundamentals: TCP/IP, IP addressing, and OSI model[cite: 26].</li>
+                <li>AWS and Microsoft Azure cloud fundamentals[cite: 28].</li>
             </ul>
         </div>
 
-        <h3 class="section-title">Cloud Projects</h3>
-        <div class="exp-item">
-            <h4>1. Automated Cloud Resume Deployment</h4>
-            <span class="date">Current Project</span>
-            <ul>
-                <li>Hosted this live resume on <strong>Netlify Cloud</strong> using CI/CD.</li>
-                <li>Integrated GitHub for version control and automated updates.</li>
-            </ul>
-            
-            <h4>2. Linux Admin Practice Project</h4>
-            <ul>
-                <li>Managed users, groups, and directory structures in Linux environment.</li>
-                <li>Performed network connectivity tests between multiple VMs.</li>
-            </ul>
+        <h3 class="section-title">EDUCATION [cite: 13]</h3>
+        <div class="edu-item">
+            <h4>Bachelor of Commerce (Honours) [cite: 30]</h4>
+            <div class="institute">Delhi University - School of Open Learning [cite: 35]</div>
+            <div class="date-range">2023-2026 [cite: 36]</div>
         </div>
 
-        <h3 class="section-title">Education</h3>
-        <div class="exp-item">
-            <h4>B.Com (Hons)</h4>
-            <span class="date">Delhi University | 2023-2026 </span>
+        <div class="edu-item">
+            <h4>Higher Secondary Education (Class XII) [cite: 16]</h4>
+            <div class="institute">Ralli International School (CBSE Board) [cite: 18, 55]</div>
+            <div class="date-range">2023 [cite: 18]</div>
         </div>
-        <div class="exp-item">
-            <h4>Class XII (CBSE)</h4>
-            <span class="date">Ralli International School | 2023 </span>
+
+        <div class="edu-item">
+            <h4>Secondary Education (Class X) [cite: 57]</h4>
+            <div class="institute">Ralli International School (CBSE Board) [cite: 59, 32]</div>
+            <div class="date-range">2020 [cite: 60]</div>
         </div>
+
+        <h3 class="section-title">ADDITIONAL INFORMATION [cite: 90]</h3>
+        <ul>
+            <li>Willing to learn new technologies[cite: 91].</li>
+            <li>Comfortable working in a team environment[cite: 91].</li>
+            <li>Interested in system administration and cloud roles[cite: 91].</li>
+        </ul>
     </div>
 </div>
 
